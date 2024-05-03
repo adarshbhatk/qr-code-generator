@@ -7,20 +7,6 @@ import { dirname } from "path";
 import { fileURLToPath } from "url";  
 import bodyParser from "body-parser";
 
-import { NowRequest, NowResponse } from '@vercel/node';
-
-// ... your other imports 
-
-export default async (req: NowRequest, res: NowResponse) => {
-  if (req.method === 'GET') {
-    // ... your code for serving index.html
-  } else if (req.method === 'POST') {
-    // ... your QR code generation and response logic 
-  } else {
-    res.status(405).send('Method not allowed');
-  }
-}
-
 var userURL = "";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
