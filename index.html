@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>QR Code Generator</h1>
+    <p>Enter the website URL below</p>
+    <form action="/generate" method="POST">
+      <input type="text" id="urlInput" name ="urlInput" placeholder="Enter URL">
+      <button type="submit">Generate</button>
+    </form>
+    <div id="qrcode"></div>
+    <p>Made with ❤️ in Kasaragod</p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
