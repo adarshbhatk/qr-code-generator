@@ -12,7 +12,7 @@ var userURL = "";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const app = express();
-const port = = process.env.PORT || 3030;
+const port = process.env.PORT || 3030;
 
 
 
